@@ -1,0 +1,155 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #673ab7;
+  --accent: #bd1850;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+a:hover, a:focus {
+  color: var(--accent);
+  outline: none;
+  border-bottom: 1px solid;
+}
+
+#root {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+input {
+  border: 0;
+  width: 100%;
+  color: var(--primary);
+  font-size: 1rem;
+}
+input:focus {
+  outline: none;
+}
+input[type=password] {
+  flex-basis: 48%;
+}
+
+button {
+  background: var(--primary);
+  font-weight: 700;
+  color: #fff;
+  transition: background 0.3s ease-in-out;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+button:hover, button:focus {
+  background: var(--accent);
+  outline: none;
+}
+button:first-child {
+  margin-left: 5rem;
+}
+button:last-child {
+  margin-right: 5rem;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background: #ddd;
+  padding: 1rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+header .container {
+  align-items: center;
+}
+
+section .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  flex: 1;
+  padding: 2rem 0 0;
+}
+section + footer {
+  margin-top: 2rem;
+}
+section .container {
+  flex-wrap: wrap;
+}
+
+table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+}
+table thead tr {
+  border-bottom: 1px solid;
+}
+table thead th {
+  padding-left: 1rem;
+}
+table thead th:first-child {
+  text-align: right;
+}
+table thead th:last-child {
+  text-align: center;
+}
+table th,
+table td {
+  padding: 0 0 0.5rem;
+  text-align: left;
+}
+table th {
+  color: var(--primary);
+}
+table tr > td:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+table tbody > tr:first-child th,
+table tbody > tr:first-child td {
+  padding-top: 0.5rem;
+}
+table tbody th {
+  text-align: right;
+}
+table tbody td {
+  padding-left: 1rem;
+}
+
+p.error {
+  font-weight: 700;
+  text-align: center;
+  color: var(--accent);
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: #ddd;
+  padding: 1rem;
+}
